@@ -13,9 +13,9 @@
 				"fileSystem": "synapsecontainer"
 			},
 			"columnDelimiter": ",",
-			"escapeChar": "\\",
+			"escapeChar": "",
 			"firstRowAsHeader": true,
-			"quoteChar": "\""
+			"quoteChar": "No quote character"
 		},
 		"schema": [
 			{
