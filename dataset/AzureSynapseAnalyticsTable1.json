@@ -1,0 +1,53 @@
+{
+	"name": "AzureSynapseAnalyticsTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSynapseAnalytics1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "Correlationid",
+				"type": "varchar"
+			},
+			{
+				"name": "Operationname",
+				"type": "varchar"
+			},
+			{
+				"name": "Status",
+				"type": "varchar"
+			},
+			{
+				"name": "Eventcategory",
+				"type": "varchar"
+			},
+			{
+				"name": "Level",
+				"type": "varchar"
+			},
+			{
+				"name": "Time",
+				"type": "varchar"
+			},
+			{
+				"name": "Subscription",
+				"type": "varchar"
+			},
+			{
+				"name": "Eventinitiatedby) varchar(1000),\r\n\r\n[Resourcetype",
+				"type": "varchar"
+			},
+			{
+				"name": "Resourcegroup) varchar(1000),\r\n\r\n[Resource",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PoolActivityLog"
+		}
+	}
+}
