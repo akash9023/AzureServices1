@@ -13,7 +13,16 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "synapsecontainer//"
+					},
+					{
+						"name": "Destination",
+						"value": "dbo.PoolActivityLog"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "DelimitedTextSource",
@@ -29,7 +38,7 @@
 					},
 					"sink": {
 						"type": "SqlDWSink",
-						"writeBehavior": "Insert"
+						"allowCopyCommand": true
 					},
 					"enableStaging": false,
 					"translator": {
@@ -125,12 +134,7 @@
 									"type": "String"
 								}
 							}
-						],
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
-						}
+						]
 					}
 				},
 				"inputs": [
